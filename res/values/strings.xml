@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Instant Sound Effects</string>
+    <string name="action_share">Share this app</string>
+    <string name="title_section1">Rimshot</string>
+    <string name="title_section2">Trombone</string>
+    <string name="title_section3">Crickets</string>
+    <string name="title_section4">Nope</string>
+    <string name="button_description">It\'s a big button!</string>
+    <string name="share_text">Check out this cool app - Rimshot, Crickets, and Sad Trombone sound effects for Android! Get it for free at http://goo.gl/ATyfW</string>
+
+</resources>
