@@ -2,23 +2,18 @@ package com.bri1.soundbored
 
 import java.util.Locale
 
-import android.app.ActionBar
-import android.app.FragmentTransaction
+import androidx.appcompat.app.ActionBar
+import androidx.fragment.app.FragmentTransaction
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentActivity
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
-import android.support.v4.view.ViewPager
-import android.view.LayoutInflater
-import android.view.Menu
-import android.view.View
-import android.view.ViewGroup
+import androidx.fragment.app.*
+import androidx.viewpager.widget.ViewPager
+import android.view.*
 import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : FragmentActivity(), ActionBar.TabListener {
+class MainActivity : AppCompatActivity(), ActionBar.TabListener {
 
     lateinit var sectionsPagerAdapter: SectionsPagerAdapter
     lateinit var viewPager: ViewPager
@@ -27,7 +22,7 @@ class MainActivity : FragmentActivity(), ActionBar.TabListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        actionBar?.navigationMode = ActionBar.NAVIGATION_MODE_TABS
+        supportActionBar?.navigationMode = ActionBar.NAVIGATION_MODE_TABS
 
         sectionsPagerAdapter = SectionsPagerAdapter(
                 supportFragmentManager)
@@ -38,12 +33,12 @@ class MainActivity : FragmentActivity(), ActionBar.TabListener {
         viewPager
                 .setOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
                     override fun onPageSelected(position: Int) {
-                        actionBar.setSelectedNavigationItem(position)
+                        supportActionBar?.setSelectedNavigationItem(position)
                     }
                 })
 
         for (i in 0 until sectionsPagerAdapter.count) {
-            actionBar.addTab(actionBar.newTab().apply {
+            supportActionBar?.addTab(supportActionBar?.newTab()?.apply {
                 text = sectionsPagerAdapter.getPageTitle(i)
                 setTabListener(this@MainActivity)
             })
