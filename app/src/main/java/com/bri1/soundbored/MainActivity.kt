@@ -15,53 +15,54 @@ import android.support.v4.view.ViewPager
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.View
-import android.view.View.OnClickListener
 import android.view.ViewGroup
 import android.widget.ImageButton
 
 class MainActivity : FragmentActivity(), ActionBar.TabListener {
 
-    lateinit var mSectionsPagerAdapter: SectionsPagerAdapter
-    lateinit var mViewPager: ViewPager
+    lateinit var sectionsPagerAdapter: SectionsPagerAdapter
+    lateinit var viewPager: ViewPager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val actionBar = actionBar
-        actionBar!!.navigationMode = ActionBar.NAVIGATION_MODE_TABS
+        actionBar?.navigationMode = ActionBar.NAVIGATION_MODE_TABS
 
-        mSectionsPagerAdapter = SectionsPagerAdapter(
+        sectionsPagerAdapter = SectionsPagerAdapter(
                 supportFragmentManager)
 
-        mViewPager = findViewById<View>(R.id.pager) as ViewPager
-        mViewPager.adapter = mSectionsPagerAdapter
+        viewPager = findViewById<View>(R.id.pager) as ViewPager
+        viewPager.adapter = sectionsPagerAdapter
 
-        mViewPager
+        viewPager
                 .setOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
                     override fun onPageSelected(position: Int) {
                         actionBar.setSelectedNavigationItem(position)
                     }
                 })
 
-        for (i in 0 until mSectionsPagerAdapter.count) {
-            actionBar.addTab(actionBar.newTab()
-                    .setText(mSectionsPagerAdapter.getPageTitle(i))
-                    .setTabListener(this))
+        for (i in 0 until sectionsPagerAdapter.count) {
+            actionBar.addTab(actionBar.newTab().apply {
+                text = sectionsPagerAdapter.getPageTitle(i)
+                setTabListener(this@MainActivity)
+            })
         }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main, menu)
-        val share_intent = Intent(Intent.ACTION_SEND)
-        share_intent.setType("text/plain").putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text))
-        menu.findItem(R.id.action_share).intent = share_intent
+        with (Intent(Intent.ACTION_SEND)) {
+            type = "text/plain"
+            putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text))
+            menu.findItem(R.id.action_share).intent = this
+        }
         return true
     }
 
     override fun onTabSelected(tab: ActionBar.Tab,
                                fragmentTransaction: FragmentTransaction) {
-        mViewPager.currentItem = tab.position
+        viewPager.currentItem = tab.position
     }
 
     override fun onTabUnselected(tab: ActionBar.Tab,
@@ -102,25 +103,25 @@ class MainActivity : FragmentActivity(), ActionBar.TabListener {
                                   savedInstanceState: Bundle?): View? {
             val rootView = inflater.inflate(R.layout.fragment_main,
                     container, false)
-            val ibtn = rootView
-                    .findViewById<View>(R.id.imgButton) as ImageButton
-            ibtn.isSoundEffectsEnabled = false
+            with (rootView.findViewById<View>(R.id.imgButton) as ImageButton) {
+                isSoundEffectsEnabled = false
 
-            when (arguments!!.getInt(ARG_SECTION_NUMBER)) {
-                1 -> ibtn.setImageResource(R.drawable.button_red)
-                2 -> ibtn.setImageResource(R.drawable.button_blue)
-                3 -> ibtn.setImageResource(R.drawable.button_green)
-                4 -> ibtn.setImageResource(R.drawable.button_purple)
-            }
-
-            ibtn.setOnClickListener {
                 when (arguments?.getInt(ARG_SECTION_NUMBER)) {
-                    1 -> MediaPlayer.create(activity, R.raw.rimshot)
-                    2 -> MediaPlayer.create(activity, R.raw.trombone)
-                    3 -> MediaPlayer.create(activity, R.raw.crickets)
-                    4 -> MediaPlayer.create(activity, R.raw.nope)
-                    else -> MediaPlayer.create(activity, R.raw.nope)
-                }.start()
+                    1 -> setImageResource(R.drawable.button_red)
+                    2 -> setImageResource(R.drawable.button_blue)
+                    3 -> setImageResource(R.drawable.button_green)
+                    4 -> setImageResource(R.drawable.button_purple)
+                }
+
+                setOnClickListener {
+                    when (arguments?.getInt(ARG_SECTION_NUMBER)) {
+                        1 -> MediaPlayer.create(activity, R.raw.rimshot)
+                        2 -> MediaPlayer.create(activity, R.raw.trombone)
+                        3 -> MediaPlayer.create(activity, R.raw.crickets)
+                        4 -> MediaPlayer.create(activity, R.raw.nope)
+                        else -> MediaPlayer.create(activity, R.raw.nope)
+                    }.start()
+                }
             }
 
             return rootView
