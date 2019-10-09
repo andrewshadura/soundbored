@@ -7,7 +7,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        applicationId "com.bri1.soundbored"
+        applicationId "com.bri1.soundbored.reborn"
         minSdkVersion 14
         targetSdkVersion 28
     }
