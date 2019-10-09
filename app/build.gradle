@@ -9,6 +9,8 @@ android {
     defaultConfig {
         applicationId "com.bri1.soundbored.reborn"
         minSdkVersion 14
+        versionCode 4
+        versionName "2.1"
         targetSdkVersion 28
     }
 
