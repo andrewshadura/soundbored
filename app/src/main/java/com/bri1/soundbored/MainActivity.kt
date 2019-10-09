@@ -12,8 +12,9 @@ import androidx.viewpager.widget.ViewPager
 import android.view.*
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.tabs.TabLayout
 
-class MainActivity : AppCompatActivity(), ActionBar.TabListener {
+class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
 
     lateinit var sectionsPagerAdapter: SectionsPagerAdapter
     lateinit var viewPager: ViewPager
@@ -22,27 +23,11 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportActionBar?.navigationMode = ActionBar.NAVIGATION_MODE_TABS
-
         sectionsPagerAdapter = SectionsPagerAdapter(
                 supportFragmentManager)
 
         viewPager = findViewById<View>(R.id.pager) as ViewPager
         viewPager.adapter = sectionsPagerAdapter
-
-        viewPager
-                .setOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
-                    override fun onPageSelected(position: Int) {
-                        supportActionBar?.setSelectedNavigationItem(position)
-                    }
-                })
-
-        for (i in 0 until sectionsPagerAdapter.count) {
-            supportActionBar?.addTab(supportActionBar?.newTab()?.apply {
-                text = sectionsPagerAdapter.getPageTitle(i)
-                setTabListener(this@MainActivity)
-            })
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -55,17 +40,14 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
         return true
     }
 
-    override fun onTabSelected(tab: ActionBar.Tab,
-                               fragmentTransaction: FragmentTransaction) {
+    override fun onTabSelected(tab: TabLayout.Tab) {
         viewPager.currentItem = tab.position
     }
 
-    override fun onTabUnselected(tab: ActionBar.Tab,
-                                 fragmentTransaction: FragmentTransaction) {
+    override fun onTabUnselected(tab: TabLayout.Tab) {
     }
 
-    override fun onTabReselected(tab: ActionBar.Tab,
-                                 fragmentTransaction: FragmentTransaction) {
+    override fun onTabReselected(tab: TabLayout.Tab) {
     }
 
     inner class SectionsPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
@@ -115,7 +97,13 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener {
                         3 -> MediaPlayer.create(activity, R.raw.crickets)
                         4 -> MediaPlayer.create(activity, R.raw.nope)
                         else -> MediaPlayer.create(activity, R.raw.nope)
-                    }.start()
+                    }.apply {
+                        setOnCompletionListener {
+                            reset()
+                            release()
+                        }
+                        start()
+                    }
                 }
             }
 
