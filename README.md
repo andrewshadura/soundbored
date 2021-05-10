@@ -5,7 +5,7 @@ Latest version: 2.1 (released 9 October 2019)
 
 [Download app](https://play.google.com/store/apps/details?id=com.bri1.soundbored.reborn)
 
-![Portrait screenshot](screenshots/phone-portrait.png)
+![Portrait screenshot](fastlane/metadata/android/en-US/images/phoneScreenshots/1.png)
 
 Code license: GNU GPL v3
 
