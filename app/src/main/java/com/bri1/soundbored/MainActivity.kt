@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
                 1 -> getString(R.string.title_section2).toUpperCase(l)
                 2 -> getString(R.string.title_section3).toUpperCase(l)
                 3 -> getString(R.string.title_section4).toUpperCase(l)
+                4 -> getString(R.string.whistle_desc).toUpperCase(l)
                 else -> null
             }
         }
@@ -88,6 +89,7 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
                     2 -> setImageResource(R.drawable.button_blue)
                     3 -> setImageResource(R.drawable.button_green)
                     4 -> setImageResource(R.drawable.button_purple)
+                    5 -> setImageResource(R.drawable.button_red)
                 }
 
                 setOnClickListener {
@@ -96,6 +98,7 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
                         2 -> MediaPlayer.create(activity, R.raw.trombone)
                         3 -> MediaPlayer.create(activity, R.raw.crickets)
                         4 -> MediaPlayer.create(activity, R.raw.nope)
+                        5 -> MediaPlayer.create(activity, R.raw.whistledesc)
                         else -> MediaPlayer.create(activity, R.raw.nope)
                     }.apply {
                         setOnCompletionListener {
