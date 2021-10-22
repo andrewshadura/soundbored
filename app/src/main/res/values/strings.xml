@@ -11,4 +11,13 @@
     <string name="share_text">Check out this cool app - Rimshot, Crickets, and Sad Trombone sound effects for Android! Get it for free at https://play.google.com/store/apps/details?id=com.bri1.soundbored.reborn</string>
     <string name="whistle_desc">Whistle-Desc</string>
 
+    <string name="credits">Credits</string>
+    <string name="text_license">License: GNU GPL v3</string>
+    <string name="title_creators">Creators:</string>
+
+    <string name="text_brian">Code written by <a  href="https://github.com/brinez">Brian Nezvadovitz</a> Copyright © 2012–2013</string>
+    <string name="text_andrej">Ported to the modern Android version by <a href="https://github.com/andrewshadura">Andrej Shadura</a> Copyright © 2019</string>
+    <string name="text_tyler">Forked for open source use by <a href="https://github.com/tucker-tyler">@tucker-tyler</a> Copyright © 2021</string>
+    <string name="open_source_app"><a href="https://opensource.org">Open Source App</a></string>
+
 </resources>

@@ -2,8 +2,6 @@ package com.bri1.soundbored
 
 import java.util.Locale
 
-import androidx.appcompat.app.ActionBar
-import androidx.fragment.app.FragmentTransaction
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -11,6 +9,7 @@ import androidx.fragment.app.*
 import androidx.viewpager.widget.ViewPager
 import android.view.*
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayout
 
@@ -31,13 +30,30 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
+
         menuInflater.inflate(R.menu.main, menu)
+
         with (Intent(Intent.ACTION_SEND)) {
             type = "text/plain"
             putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text))
             menu.findItem(R.id.action_share).intent = this
         }
+
         return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_share -> {
+                Toast.makeText(applicationContext, "click on share", Toast.LENGTH_LONG).show()
+                true
+            }
+            R.id.action_credits ->{
+                this.startActivity(Intent(this,Credits::class.java))
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     override fun onTabSelected(tab: TabLayout.Tab) {
