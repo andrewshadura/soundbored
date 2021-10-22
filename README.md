@@ -3,7 +3,7 @@ SoundBored
 
 Latest version: 2.1 (released 9 October 2019)
 
-[Download app](https://play.google.com/store/apps/details?id=com.bri1.soundbored.reborn)
+[![Download app](https://github.com/tucker-tyler/soundbored/blob/master/pictures/googleplay.png?raw=true)](https://play.google.com/store/apps/details?id=com.bri1.soundbored.reborn)
 
 ![Portrait screenshot](fastlane/metadata/android/en-US/images/phoneScreenshots/1.png)
 
