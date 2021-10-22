@@ -16,3 +16,6 @@ Latest version: 2.1 (released 9 October 2019)
 * Code written by [Brian Nezvadovitz](https://github.com/brinez) Copyright (c) 2012-2013
 * Ported to the modern Android version by [Andrej Shadura](https://github.com/andrewshadura) Copyright (c) 2019
 * Forked for open source use by [@tucker-tyler](https://github.com/tucker-tyler) Copyright (c) 2021
+
+Open Source App
+![Open Source]()
