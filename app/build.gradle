@@ -4,10 +4,10 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 31
-    buildToolsVersion "28.0.3"
+    buildToolsVersion '30.0.3'
 
     defaultConfig {
-        applicationId "com.github.tuckertyler.soundbored"
+        applicationId "com.bri1.soundbored"
         minSdkVersion 14
         versionCode 4
         versionName "2.1"
@@ -21,8 +21,12 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility "1.8"
-        targetCompatibility "1.8"
+        sourceCompatibility kotlin_version
+        targetCompatibility kotlin_version
+    }
+    dependenciesInfo {
+        includeInApk true
+        includeInBundle true
     }
 }
 
