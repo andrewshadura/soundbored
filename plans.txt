@@ -1,0 +1,15 @@
+What to include
+
+-Meme sounds
+-vine quotes
+-songs?
+-videogame noises?
+
+complicate things (future plans)
+-add a repo of sounds
+-access the repo
+-have the user add and remove sounds they want
+-make the board an actual pegboard-style board, not a top menu
+
+sources
+-https://freesound.org/

@@ -11,3 +11,4 @@ Code license: GNU GPL v3
 
 Code written by Brian Nezvadovitz. Copyright (c) 2012-2013.
 Ported to the modern Android version by Andrej Shadura, (c) 2019
+Forked for open source use by @tucker-tyler on Github (c) 2021
