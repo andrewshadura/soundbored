@@ -21,7 +21,9 @@ Latest version: 2.1 (released 9 October 2019)
 * Forked for open source use by [@tucker-tyler](https://github.com/tucker-tyler) Copyright (c) 2021
 
 #### Open Source App
-<!-- 
-![Open Source](https://github.com/tucker-tyler/soundbored/blob/master/pictures/opensource.png width=100 height=100) -->
 
 [<img src="https://github.com/tucker-tyler/soundbored/blob/master/pictures/opensource.png" alt="open source" width="50" height="50">](https://opensource.org/)
+
+### Icons
+
+Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/amethystdesign" title="AmethystDesign">AmethystDesign</a>, <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
