@@ -32,3 +32,4 @@ local.properties
 .idea/assetWizardSettings.xml
 app/keystore.properties
 keystore.properties
+app/release/app-release.aab
