@@ -4,8 +4,22 @@ apply plugin: 'kotlin-android'
 
 android {
     signingConfigs {
+
+        def keystorePropertiesFile = rootProject.file("keystore.properties");
+        def keystoreProperties = new Properties()
+        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
         debug {
-            storeFile file('D:\\projects-coding\\keys\\soundbored.jks')
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+        }
+        release {
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
         }
     }
     compileSdkVersion 31
@@ -14,9 +28,12 @@ android {
     defaultConfig {
         applicationId "com.bri1.soundbored2"
         minSdkVersion 16
-        versionCode 4.1
-        versionName "2.1"
+//        versionCode 4.1
+//        versionName "2.1"
         targetSdkVersion 31
+        signingConfig signingConfigs.release
+//        testFunctionalTest false
+//        testHandleProfiling false
     }
 
     buildTypes {

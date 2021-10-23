@@ -30,4 +30,5 @@ local.properties
 .idea/workspace.xml
 .idea/navEditor.xml
 .idea/assetWizardSettings.xml
+app/keystore.properties
 keystore.properties
