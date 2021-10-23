@@ -8,7 +8,7 @@ Latest version: 2.1 (released 9 October 2019)
 [![Download app](https://github.com/tucker-tyler/soundbored/blob/master/pictures/fdroid.png)](https://f-droid.org/en/packages/com.bri1.soundbored.reborn/)
 
 
-<img src="https://github.com/tucker-tyler/soundbored/blob/master/pictures/screen-cap.png" alt="screenshot" width="225" height="400">
+<img src="https://github.com/tucker-tyler/soundbored/blob/master/pictures/screen-cap2.png" alt="screenshot" width="225" height="400">
 
 ### License
 
