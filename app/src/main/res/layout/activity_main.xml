@@ -1,4 +1,4 @@
-<androidx.viewpager.widget.ViewPager
+<androidx.gridlayout.widget.GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,36 +7,48 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:tabMode="scrollable">
+    <ImageButton
+        android:id="@+id/rimshot"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/drum"
+        android:contentDescription="@string/drum" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/title_section1" />
+    <ImageButton
+        android:id="@+id/crickets"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grasshopper"
+        android:contentDescription="@string/cricket" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/title_section2" />
+    <ImageButton
+        android:id="@+id/trombone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/trombone"
+        android:contentDescription="@string/trombone" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/title_section3" />
+    <ImageButton
+        android:id="@+id/whistle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/whistle"
+        android:contentDescription="@string/whistle_desc" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/title_section4" />
+    <ImageButton
+        android:id="@+id/nope"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nope"
+        app:layout_column="0"
+        app:layout_row="1"
+        android:contentDescription="@string/nope" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/whistle_desc" />
-    </com.google.android.material.tabs.TabLayout>
+</androidx.gridlayout.widget.GridLayout>
 
-</androidx.viewpager.widget.ViewPager>
+
