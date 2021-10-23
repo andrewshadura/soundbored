@@ -26,4 +26,4 @@ Latest version: 2.1 (released 9 October 2019)
 
 ### Icons
 
-Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/amethystdesign" title="AmethystDesign">AmethystDesign</a>, <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+Icons made by [Freepik](https://www.freepik.com), [AmethystDesign](https://www.flaticon.com/authors/amethystdesign), [Nikita Golubev](https://www.flaticon.com/authors/nikita-golubev) from [www.flaticon.com](https://www.flaticon.com/)
