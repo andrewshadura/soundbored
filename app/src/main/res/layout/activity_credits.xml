@@ -69,7 +69,15 @@
             android:layout_height="47dp"
             app:srcCompat="@drawable/opensource"
             android:contentDescription="@string/open_source_app"
-
             />
+
+        <TextView
+            android:id="@+id/text_icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/freeicon_total"
+            android:paddingTop="16dp"
+            />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
