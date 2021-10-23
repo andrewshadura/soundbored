@@ -3,13 +3,18 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\projects-coding\\keys\\soundbored.jks')
+        }
+    }
     compileSdkVersion 31
     buildToolsVersion '30.0.3'
 
     defaultConfig {
-        applicationId "com.bri1.soundbored"
+        applicationId "com.bri1.soundbored2"
         minSdkVersion 16
-        versionCode 4
+        versionCode 4.1
         versionName "2.1"
         targetSdkVersion 31
     }

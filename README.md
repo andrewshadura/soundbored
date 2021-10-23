@@ -4,8 +4,8 @@ SoundBored
 Latest version: 2.1 (released 9 October 2019)
 
 ### Get the app
-[![Download app](https://github.com/tucker-tyler/soundbored/blob/master/pictures/googleplay.png?raw=true)](https://play.google.com/store/apps/details?id=com.bri1.soundbored.reborn)
-[![Download app](https://github.com/tucker-tyler/soundbored/blob/master/pictures/fdroid.png)](https://f-droid.org/en/packages/com.bri1.soundbored.reborn/)
+[![Download app](https://github.com/tucker-tyler/soundbored/blob/master/pictures/googleplay.png?raw=true)](https://play.google.com/store/apps/details?id=soundbored2.reborn)
+[![Download app](https://github.com/tucker-tyler/soundbored/blob/master/pictures/fdroid.png)](https://f-droid.org/en/packages/soundbored2.reborn/)
 
 
 <img src="https://github.com/tucker-tyler/soundbored/blob/master/pictures/screen-cap2.png" alt="screenshot" width="225" height="400">
