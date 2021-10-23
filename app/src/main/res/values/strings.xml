@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Instant Sound Effects</string>
+    <string name="app_name">SoundBored</string>
     <string name="action_share">Share this app</string>
     <string name="title_section1">Rimshot</string>
     <string name="title_section2">Trombone</string>
@@ -9,7 +9,7 @@
     <string name="title_section4">Nope</string>
     <string name="button_description">It\'s a big button!</string>
     <string name="share_text">Check out this cool app - Rimshot, Crickets, and Sad Trombone sound effects for Android! Get it for free at https://play.google.com/store/apps/details?id=com.bri1.soundbored.reborn</string>
-    <string name="whistle_desc">Whistle-Desc</string>
+    <string name="whistle_desc">Whistle descending</string>
 
     <string name="credits">Credits</string>
     <string name="text_license">License: GNU GPL v3</string>
@@ -19,5 +19,15 @@
     <string name="text_andrej">Ported to the modern Android version by <a href="https://github.com/andrewshadura">Andrej Shadura</a> Copyright © 2019</string>
     <string name="text_tyler">Forked for open source use by <a href="https://github.com/tucker-tyler">@tucker-tyler</a> Copyright © 2021</string>
     <string name="open_source_app"><a href="https://opensource.org">Open Source App</a></string>
+
+    <string name="freeicon_drum"><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></string>
+    <string name="freeicon_cricket"><div>Icons made by <a href="https://www.flaticon.com/authors/amethystdesign" title="AmethystDesign">AmethystDesign</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></string>
+    <string name="freeicon_trombone"><div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></string>
+    <string name="freeicon_whistle"><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></string>
+
+    <string name="drum">drum</string>
+    <string name="cricket">cricket</string>
+    <string name="trombone">trombone</string>
+    <string name="nope">nope</string>
 
 </resources>
