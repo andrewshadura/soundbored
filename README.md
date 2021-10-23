@@ -20,7 +20,7 @@ Latest version: 2.1 (released 9 October 2019)
 * Ported to the modern Android version by [Andrej Shadura](https://github.com/andrewshadura) Copyright (c) 2019
 * Forked for open source use by [@tucker-tyler](https://github.com/tucker-tyler) Copyright (c) 2021
 
-#### Open Source App
+### Open Source App
 
 [<img src="https://github.com/tucker-tyler/soundbored/blob/master/pictures/opensource.png" alt="open source" width="50" height="50">](https://opensource.org/)
 
