@@ -28,8 +28,8 @@ android {
     defaultConfig {
         applicationId "com.bri1.soundbored2"
         minSdkVersion 16
-        versionCode 5
-        versionName "2.2"
+        versionCode 6
+        versionName '2.3'
         targetSdkVersion 31
         signingConfig signingConfigs.release
 //        testFunctionalTest false
