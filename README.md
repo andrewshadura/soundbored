@@ -27,3 +27,7 @@ Latest version: 2.3 (releasing soon!)
 ### Icons
 
 Icons made by [Freepik](https://www.freepik.com), [AmethystDesign](https://www.flaticon.com/authors/amethystdesign), [Nikita Golubev](https://www.flaticon.com/authors/nikita-golubev) from [www.flaticon.com](https://www.flaticon.com/)
+
+### Open Source Libraries
+
+Coming soon
