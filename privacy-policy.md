@@ -6,8 +6,6 @@ This Privacy Policy describes Our policies and procedures on the collection, use
 
 We *DO NOT* collect or use Your Personal Data.
 
-This Privacy Policy has been created with the help of the <a href="https://www.termsfeed.com/privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.
-
 ## Interpretation and Definitions
 
 ### Interpretation
