@@ -33,4 +33,4 @@ Coming soon
 
 ### Privacy Policy
 
-See privacy-policy.md in this repo
+See [privacy-policy.md](https://github.com/webcooltz/soundbored/blob/master/privacy-policy.md) in this repo
