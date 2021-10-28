@@ -4,9 +4,8 @@ SoundBored
 Latest version: 2.3 (releasing soon!)
 
 ### Get the app
-[![Download app](https://github.com/webcooltz/soundbored/blob/master/pictures/googleplay.png?raw=true)](https://play.google.com/store/apps/details?id=com.bri1.soundbored2)
-[![Download app](https://github.com/webcooltz/soundbored/blob/master/pictures/fdroid.png)](https://f-droid.org/en/packages/soundbored2.reborn/)
-
+[![Download app](https://github.com/webcooltz/soundbored/blob/master/pictures/googleplay.png?raw=true)](https://play.google.com/store/apps/details?id=com.bri1.soundbored2) (in review)
+[![Download app](https://github.com/webcooltz/soundbored/blob/master/pictures/fdroid.png)](https://f-droid.org/en/packages/soundbored2.reborn/) (not posted yet)
 
 <img src="https://github.com/webcooltz/soundbored/blob/master/pictures/screen-cap2.png" alt="screenshot" width="225" height="400">
 
@@ -31,3 +30,7 @@ Icons made by [Freepik](https://www.freepik.com), [AmethystDesign](https://www.f
 ### Open Source Libraries
 
 Coming soon
+
+### Privacy Policy
+
+See privacy-policy.md in this repo
