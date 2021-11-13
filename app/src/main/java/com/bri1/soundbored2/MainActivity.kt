@@ -79,21 +79,59 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-//        val headBang = findViewById<ImageButton>(R.id.headbang)
-//        val mpHeadBang: MediaPlayer = MediaPlayer.create(this, R.raw.headbang)
-//        headBang.setOnClickListener(object : View.OnClickListener {
-//            override fun onClick(v: View?) {
-//                mpHeadBang.start()
-//            }
-//        })
-//
-//        val imJohnCena = findViewById<ImageButton>(R.id.im_john_cena)
-//        val mpJohnCena: MediaPlayer = MediaPlayer.create(this, R.raw.imjohncena)
-//        imJohnCena.setOnClickListener(object : View.OnClickListener {
-//            override fun onClick(v: View?) {
-//                mpJohnCena.start()
-//            }
-//        })
+        // headbang
+        val headBang = findViewById<ImageButton>(R.id.headbang)
+        val mpHeadBang: MediaPlayer = MediaPlayer.create(this, R.raw.headbang)
+        headBang.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                mpHeadBang.start()
+            }
+        })
+
+        // john cena flute
+        val imJohnCena = findViewById<ImageButton>(R.id.imjohncena)
+        val mpJohnCena: MediaPlayer = MediaPlayer.create(this, R.raw.johncenaflute)
+        imJohnCena.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                mpJohnCena.start()
+            }
+        })
+
+        // lemons
+        val lemons = findViewById<ImageButton>(R.id.lemons)
+        val mpLemons: MediaPlayer = MediaPlayer.create(this, R.raw.lemons)
+        lemons.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                mpLemons.start()
+            }
+        })
+
+        // good evening
+        val goodEvening = findViewById<ImageButton>(R.id.good_evening)
+        val mpGoodEvening: MediaPlayer = MediaPlayer.create(this, R.raw.goodevening)
+        goodEvening.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                mpGoodEvening.start()
+            }
+        })
+
+        // ok
+        val okayGuy = findViewById<ImageButton>(R.id.ok)
+        val mpOk: MediaPlayer = MediaPlayer.create(this, R.raw.ok)
+        okayGuy.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                mpOk.start()
+            }
+        })
+
+        // john cena flute
+        val roommates = findViewById<ImageButton>(R.id.roommates)
+        val mpRoommates: MediaPlayer = MediaPlayer.create(this, R.raw.roommates)
+        roommates.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                mpRoommates.start()
+            }
+        })
 
     }
 
