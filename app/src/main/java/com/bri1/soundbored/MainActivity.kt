@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
             return fragment
         }
 
-        override fun getCount(): Int = 4
+        override fun getCount(): Int = 5
 
         override fun getPageTitle(position: Int): CharSequence? {
             val l = Locale.getDefault()
@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
                 1 -> getString(R.string.title_section2).toUpperCase(l)
                 2 -> getString(R.string.title_section3).toUpperCase(l)
                 3 -> getString(R.string.title_section4).toUpperCase(l)
+                4 -> getString(R.string.title_section5).toUpperCase(l)
                 else -> null
             }
         }
@@ -88,6 +89,7 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
                     2 -> setImageResource(R.drawable.button_blue)
                     3 -> setImageResource(R.drawable.button_green)
                     4 -> setImageResource(R.drawable.button_purple)
+                    5 -> setImageResource(R.drawable.button_orange)
                 }
 
                 setOnClickListener {
@@ -96,6 +98,7 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
                         2 -> MediaPlayer.create(activity, R.raw.trombone)
                         3 -> MediaPlayer.create(activity, R.raw.crickets)
                         4 -> MediaPlayer.create(activity, R.raw.nope)
+                        5 -> MediaPlayer.create(activity, R.raw.sadviolin)
                         else -> MediaPlayer.create(activity, R.raw.nope)
                     }.apply {
                         setOnCompletionListener {
